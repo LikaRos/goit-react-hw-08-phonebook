@@ -29,7 +29,11 @@ export default function App() {
             <Route index element={<HomeView />} />
             <Route
               path="/goit-react-hw-08-phonebook/register"
-              element={<RegisterView />}
+              element={
+                <PublicRoute redirectTo="/goit-react-hw-08-phonebook/contacts">
+                  <RegisterView />
+                </PublicRoute>
+              }
             />
             <Route
               path="/goit-react-hw-08-phonebook/login"
