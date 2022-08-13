@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { getRefresh } from 'redux/auth/auth-operations';
 
 import { SharedLayout } from './SharedLayout/SharedLayout';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import { lazy, Suspense } from 'react';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
