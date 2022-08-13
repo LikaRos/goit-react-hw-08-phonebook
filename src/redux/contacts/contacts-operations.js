@@ -12,8 +12,6 @@ import axios from 'axios';
 //   fetchContactsSuccess,
 // } from './contact-actions';
 
-axios.defaults.baseURL = 'https://62f25f6c18493ca21f3252d8.mockapi.io/';
-
 export const fetchContacts = createAsyncThunk(
   'contacts/fetchContacts',
   async () => {
@@ -25,7 +23,7 @@ export const fetchContacts = createAsyncThunk(
 export const fetchAddContact = createAsyncThunk(
   'contacts/fetchAddContact',
   async ({ name, phone }) => {
-    const { data } = await axios.post('/contacts', { name, phone });
+    const { data } = await axios.post('/contacts', { name, number: phone });
     console.log(data);
     return data;
   }

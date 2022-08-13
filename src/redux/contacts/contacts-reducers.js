@@ -37,7 +37,7 @@ export const rootReducer = combineReducers({
   loading,
 });
 
-export default rootReducer;
+// export default rootReducer;
 //Hometask7 vers 1
 // import { combineReducers } from 'redux';
 // import {
