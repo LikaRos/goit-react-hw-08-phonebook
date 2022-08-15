@@ -7,7 +7,7 @@
 export const HomeView = () => {
   return (
     <>
-      <h1> welcome to CONTACTS</h1>;
+      <h1> welcome to CONTACTS</h1>
     </>
   );
 };
