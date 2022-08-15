@@ -25,26 +25,26 @@ export default function App() {
     <div className="backimage">
       <Suspense fallback={<p>Loading ...</p>}>
         <Routes>
-          <Route path="/goit-react-hw-08-phonebook" element={<SharedLayout />}>
+          <Route path="/" element={<SharedLayout />}>
             <Route index element={<HomeView />} />
             <Route
-              path="/goit-react-hw-08-phonebook/register"
+              path="/register"
               element={
-                <PublicRoute redirectTo="/goit-react-hw-08-phonebook/contacts">
+                <PublicRoute redirectTo="/contacts">
                   <RegisterView />
                 </PublicRoute>
               }
             />
             <Route
-              path="/goit-react-hw-08-phonebook/login"
+              path="/login"
               element={
-                <PublicRoute redirectTo="/goit-react-hw-08-phonebook/contacts">
+                <PublicRoute redirectTo="/contacts">
                   <LoginView />
                 </PublicRoute>
               }
             />
             <Route
-              path="/goit-react-hw-08-phonebook/contacts"
+              path="/contacts"
               element={
                 <PrivateRoute>
                   <ContactsView />

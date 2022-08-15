@@ -14,7 +14,7 @@ export const Navigation = () => {
       <ul className={styles.link}>
         <li>
           <NavLink
-            to="/goit-react-hw-08-phonebook"
+            to="/"
             state={location}
             className={({ isActive }) =>
               isActive ? styles.linkActive : styles.link
@@ -30,7 +30,7 @@ export const Navigation = () => {
             <h2>Добро пожаловать в контакты</h2>
 
             <NavLink
-              to="/goit-react-hw-08-phonebook/contacts"
+              to="/contacts"
               state={location}
               className={({ isActive }) =>
                 isActive ? styles.linkActive : styles.link
@@ -44,7 +44,7 @@ export const Navigation = () => {
             <li>
               {' '}
               <NavLink
-                to="/goit-react-hw-08-phonebook/register"
+                to="/register"
                 state={location}
                 className={({ isActive }) =>
                   isActive ? styles.linkActive : styles.link
@@ -55,7 +55,7 @@ export const Navigation = () => {
             </li>
             <li>
               <NavLink
-                to="/goit-react-hw-08-phonebook/login"
+                to="/login"
                 state={location}
                 className={({ isActive }) =>
                   isActive ? styles.linkActive : styles.link

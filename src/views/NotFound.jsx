@@ -6,7 +6,7 @@ export default function NotFound() {
     <div className={styles.menu}>
       <p className={styles.text}>
         Page not found, you should <span> </span>
-        <Link to="/goit-react-hw-08-phonebook/login"> LOGIN</Link>
+        <Link to="/login"> LOGIN</Link>
       </p>
     </div>
   );

@@ -5,9 +5,5 @@ import { getToken } from 'redux/auth/auth-selectors';
 export default function PrivateRoute({ children }) {
   const accessToken = useSelector(getToken);
   const { pathname } = useLocation();
-  return accessToken ? (
-    children
-  ) : (
-    <Navigate to="/goit-react-hw-08-phonebook/login" state={{ pathname }} />
-  );
+  return accessToken ? children : <Navigate to="/login" state={{ pathname }} />;
 }
